@@ -10,6 +10,17 @@ import {
 } from "@chakra-ui/react";
 import { BiCodeAlt } from "react-icons/bi";
 import { HiMinusSm } from "react-icons/hi";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaAngular,
+  FaReact,
+  FaJava,
+  FaGithub,
+  FaDocker,
+  FaAws,
+} from "react-icons/fa";
 
 const data = [
   {
@@ -75,6 +86,44 @@ const Skills = () => {
             </VStack>
           ))}
         </Grid>
+        <HStack color="gray.400" spacing={7} pt={6}>
+          <VStack>
+            <FaHtml5 fontSize="70px" />
+            <Text fontWeight="bold">HTML5</Text>
+          </VStack>
+          <VStack>
+            <FaCss3Alt fontSize="70px" />
+            <Text fontWeight="bold">CSS3</Text>
+          </VStack>
+          <VStack>
+            <FaSass fontSize="70px" />
+            <Text fontWeight="bold">Sass</Text>
+          </VStack>
+          <VStack>
+            <FaAngular fontSize="70px" />
+            <Text fontWeight="bold">Angular</Text>
+          </VStack>
+          <VStack>
+            <FaReact fontSize="70px" />
+            <Text fontWeight="bold">React</Text>
+          </VStack>
+          <VStack>
+            <FaJava fontSize="70px" />
+            <Text fontWeight="bold">Java</Text>
+          </VStack>
+          <VStack>
+            <FaGithub fontSize="70px" />
+            <Text fontWeight="bold">Git</Text>
+          </VStack>
+          <VStack>
+            <FaDocker fontSize="70px" />
+            <Text fontWeight="bold">Docker</Text>
+          </VStack>
+          <VStack>
+            <FaAws fontSize="70px" />
+            <Text fontWeight="bold">AWS</Text>
+          </VStack>
+        </HStack>
       </VStack>
     </Center>
   );
