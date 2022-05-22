@@ -1,0 +1,40 @@
+{
+  "heading": "Professional Skills",
+  "cards": [
+    {
+      "heading": "Java & Kotlin Ecosystem",
+      "text": ["Spring Boot, Spring Data, Spring Security", "Gradle, Maven"]
+    },
+    {
+      "heading": "React, JavaScript and Single Page Applications",
+      "text": [
+        "Experience in creating applications using Vanilla JS, ES6, React (Functional and Class Components, Hooks), JSX, React Router, Virtual DOM",
+        "AJAX, Fetch, NPM manager and WebSockets"
+      ]
+    },
+    {
+      "heading": "Cloud Computing",
+      "text": ["Google Cloud Platform (GCP) and Firebase", "Amazovn AWS"]
+    },
+    {
+      "heading": "Cloud Computing",
+      "text": [
+        "Google Cloud Platform (GCP) and Firebase",
+        "Amazovn AWS",
+        "Microsoft Azure",
+        "Oracle Cloud"
+      ]
+    }
+  ],
+  "icons": [
+    { "iconName": "FaHtml5", "text": "HTML5" },
+    { "iconName": "FaCss3Alt", "text": "CSS3" },
+    { "iconName": "FaSass", "text": "Sass" },
+    { "iconName": "FaAngular", "text": "Angular" },
+    { "iconName": "FaReact", "text": "React" },
+    { "iconName": "FaJava", "text": "Java" },
+    { "iconName": "FaGithub", "text": "Git" },
+    { "iconName": "FaDocker", "text": "Docker" },
+    { "iconName": "FaAws", "text": "AWS" }
+  ]
+}
