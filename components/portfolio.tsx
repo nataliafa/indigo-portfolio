@@ -1,13 +1,5 @@
 import Image from "next/image";
-import {
-  Center,
-  Heading,
-  VStack,
-  chakra,
-  Grid,
-  Text,
-  Button,
-} from "@chakra-ui/react";
+import { Center, Heading, VStack, Grid, Text, Button } from "@chakra-ui/react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import data from "./portfolio.json";
 
@@ -17,7 +9,7 @@ const Portfolio = () => {
       <VStack spacing={8} py={20} px={8} maxW="1400px" align="left">
         <Heading as="h2" alignSelf="flex-start" color="gray.100">
           {data.heading}
-          <chakra.span color="cyan.500">.</chakra.span>
+          <Text color="cyan.500">.</Text>
         </Heading>
         <Text color="gray.400" align="justify">
           {data.text}

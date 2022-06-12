@@ -2,7 +2,6 @@ import {
   Box,
   Grid,
   Heading,
-  chakra,
   VStack,
   Center,
   HStack,
@@ -19,7 +18,9 @@ const Skills = () => {
       <VStack spacing={8} py={20} px={8} maxW="1400px">
         <Heading as="h2" alignSelf="flex-start" color="gray.100">
           {data.heading}
-          <chakra.span color="cyan.500">.</chakra.span>
+          <Text as="span" color="cyan.500">
+            .
+          </Text>
         </Heading>
         <Grid templateColumns="1fr 1fr" gap={6}>
           {data.cards.map((item, index) => (
