@@ -1,3 +1,19 @@
 {
-  "heading": "Education"
+  "heading": "Education",
+  "items": [
+    {
+      "institution": "Stanford University",
+      "url": "https://www.stanford.edu",
+      "location": "Stanford, CA",
+      "date": "2007-2012",
+      "description": "Master’s in computer science, specialized in Human-Computer Interaction."
+    },
+    {
+      "institution": "University of London",
+      "url": "https://london.ac.uk",
+      "location": "London, UK",
+      "date": "2006-2007",
+      "description": "Computer Science"
+    }
+  ]
 }
