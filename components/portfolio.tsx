@@ -11,7 +11,7 @@ const Portfolio = () => {
           {data.heading}
           <Text color="cyan.500">.</Text>
         </Heading>
-        <Text color="gray.400" align="justify">
+        <Text as="span" color="gray.400" align="justify">
           {data.text}
         </Text>
         <Grid templateColumns="1fr 1fr 1fr" gap={16}>
