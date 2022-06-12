@@ -9,9 +9,11 @@ const Portfolio = () => {
       <VStack spacing={8} py={20} px={8} maxW="1400px" align="left">
         <Heading as="h2" alignSelf="flex-start" color="gray.100">
           {data.heading}
-          <Text color="cyan.500">.</Text>
+          <Text as="span" color="cyan.500">
+            .
+          </Text>
         </Heading>
-        <Text as="span" color="gray.400" align="justify">
+        <Text color="gray.400" align="justify">
           {data.text}
         </Text>
         <Grid templateColumns="1fr 1fr 1fr" gap={16}>
