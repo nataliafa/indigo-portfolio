@@ -5,6 +5,7 @@ import About from "../components/about";
 import Education from "../components/education";
 import Portfolio from "../components/portfolio";
 import Skills from "../components/skills";
+import Experience from "../components/experience";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <Skills />
         <Portfolio />
         <Education />
+        <Experience />
 
         <p className={styles.description}>
           Get started by editing{" "}
