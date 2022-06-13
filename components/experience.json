@@ -1,3 +1,21 @@
 {
-  "heading": "Work Experience"
+  "heading": "Work Experience",
+  "years": "9",
+  "languages": ["English", "German", "French"],
+  "items": [
+    {
+      "date": "May 2018 - Present",
+      "position": "Senior Front-end Developer at Bank of North",
+      "url": "https://reactjs.org",
+      "location": "Toronto, Canada",
+      "text": "Identifying user and system requirements for new websites and applications. Prioritizing software development projects, setting timelines and assigning tasks to team members. Create wireframes to decide on layout. Write or review code for various applications. Run functionality testings and debug code. Oversee junior web developers and evaluate their performance. Liaise with designers to decide on UI/UX elements (like graphics and navigation buttons). Ensure our software documentation is up-to-date. Collaborate with mobile developers to build mobile-responsive websites."
+    },
+    {
+      "date": "April 2012 - January 2018",
+      "position": "Web Developer at State Corporation",
+      "url": "https://reactjs.org",
+      "location": "London, England",
+      "text": "Responsible for the coding, design and layout of a website according to a company's specifications. As the role takes into consideration user experience and function, a certain level of both graphic design and computer programming is necessary."
+    }
+  ]
 }
