@@ -1,33 +1,90 @@
-import { Box, Button, Heading, HStack, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  HStack,
+  Center,
+  Container,
+  Stack,
+  Text,
+  Grid,
+  Link,
+  Img,
+  useToken,
+} from "@chakra-ui/react";
+import data from "./about.json";
+import Icon from "./icon";
 
 const About = () => {
+  const [gray400] = useToken("colors", ["gray.400"]);
   return (
-    <>
-      <Heading as="h1" color="brand.900">
-        About
-      </Heading>
-      <HStack>
-        <VStack>
-          <Box h={10} w={10} bg="blue.100" />
-          <Box h={10} w={10} bg="blue.200" />
-          <Box h={10} w={10} bg="blue.300" />
-          <Box h={10} w={10} bg="blue.400" />
-          <Box h={10} w={10} bg="blue.500" />
-          <Box h={10} w={10} bg="blue.600" />
-          <Box h={10} w={10} bg="blue.700" />
-          <Box h={10} w={10} bg="blue.800" />
-          <Box h={10} w={10} bg="blue.900" />
-        </VStack>
-        <VStack>
-          <Box h={10} w={10} bg="gray.100" />
-          <Box h={10} w={10} bg="gray.400" />
-        </VStack>
-        <VStack>
-          <Box h={10} w={10} bg="cyan.300" />
-        </VStack>
-        <Button colorScheme="blue">Click me</Button>
-      </HStack>
-    </>
+    <Center bg="blue.800">
+      <Container
+        maxW="1400px"
+        pt={{ base: 8, lg: 20 }}
+        pb={{ base: 8, md: 0 }}
+        px={{ base: 5, lg: 8 }}
+      >
+        <HStack spacing={4} mb={{ base: 6, lg: 0 }}>
+          {data.socials.map((item, index) => (
+            <Link key={index} href={item.link} isExternal>
+              <Icon name={item.iconName} fontSize="32px" color="white" />
+            </Link>
+          ))}
+        </HStack>
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1.5fr 1fr" }}
+          gap={{ base: 10, lg: 12 }}
+          alignSelf="end"
+        >
+          <Grid
+            templateColumns={{ base: "1fr", lg: "1fr 420px" }}
+            gap={2}
+            alignItems="end"
+            alignSelf={{ base: "center", lg: "end" }}
+            justifySelf="center"
+          >
+            <Heading
+              as="h1"
+              size="xl"
+              mb={{ base: 4, lg: 10 }}
+              textAlign={{ base: "center", lg: "left" }}
+            >
+              {data.fullName}
+            </Heading>
+            <Box
+              w={{ base: "300px", lg: "420px" }}
+              h={{ base: "240px", lg: "330px" }}
+              overflow="hidden"
+            >
+              <Img
+                w="100%"
+                borderRadius="full"
+                src={data.image}
+                alt={data.imageAlt}
+              />
+            </Box>
+          </Grid>
+          <Stack spacing={{ base: 4, lg: 5 }} mb={{ lg: 4 }}>
+            <Box pos="relative">
+              <Box pos="absolute" top={2}>
+                <Icon name="HiMinusSm" fontSize="14px" color={gray400} />
+              </Box>
+              <Text ml={5} fontSize="xl" color="gray.400">
+                Introduction
+              </Text>
+            </Box>
+            <Heading>
+              {data.profession}
+              <br />
+              {data.location}
+            </Heading>
+            <Text color="gray.400">{data.text}</Text>
+            <Button>Download CV</Button>
+          </Stack>
+        </Grid>
+      </Container>
+    </Center>
   );
 };
 
