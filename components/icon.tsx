@@ -12,9 +12,10 @@ import { BsQuestionCircle } from "react-icons/bs";
 type IconProps = {
   name: string;
   fontSize?: string;
+  color?: string;
 };
 
-const Icon = ({ name, fontSize }: IconProps) => {
+const Icon = ({ name, fontSize, color }: IconProps) => {
   let IconComponent: any;
   if (name.startsWith("Hi")) {
     IconComponent = HiIcons[name];
@@ -46,7 +47,7 @@ const Icon = ({ name, fontSize }: IconProps) => {
   if (!IconComponent) {
     return <BsQuestionCircle />;
   }
-  return <IconComponent fontSize={fontSize} />;
+  return <IconComponent fontSize={fontSize} color={color} />;
 };
 
 export default Icon;
