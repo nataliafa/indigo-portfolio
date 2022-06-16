@@ -1,0 +1,22 @@
+{
+  "socials": [
+    {
+      "iconName": "FaGithub",
+      "link": "https://github.com"
+    },
+    {
+      "iconName": "FaLinkedinIn",
+      "link": "https://www.linkedin.com"
+    },
+    {
+      "iconName": "FaBehance",
+      "link": "https://www.behance.net"
+    }
+  ],
+  "fullName": "Oliver Wilson",
+  "image": "/profile-image.jpg",
+  "imageAlt": "Oliver Wilson",
+  "profession": "Web Developer",
+  "location": "Based in Toronto, Canada",
+  "text": "What I do, where I am right now. What awesome stuff I am working on. How did I get there. What awesome stuff I did. What awesome things I love to do when I'm not doing awesome stuff at work."
+}
