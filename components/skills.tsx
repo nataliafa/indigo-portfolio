@@ -19,7 +19,7 @@ const Skills = () => {
     <Center bg="blue.900">
       <Container maxW="1400px" py={20} px={8}>
         <VStack spacing={8}>
-          <Heading alignSelf="self-start" as="h2" color="gray.100">
+          <Heading alignSelf="self-start">
             {data.heading}
             <Text as="span" color="cyan.500">
               .
@@ -36,7 +36,7 @@ const Skills = () => {
               >
                 <HStack color="gray.100">
                   <BiCodeAlt fontSize="22px" />
-                  <Heading as="h3" size="md">
+                  <Heading as="h3" size="sm">
                     {item.heading}
                   </Heading>
                 </HStack>

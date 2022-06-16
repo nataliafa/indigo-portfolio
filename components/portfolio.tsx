@@ -16,7 +16,7 @@ const Portfolio = () => {
     <Center bg="blue.800">
       <Container maxW="1400px" py={20} px={8}>
         <Stack spacing={8}>
-          <Heading as="h2" color="gray.100">
+          <Heading>
             {data.heading}
             <Text as="span" color="cyan.500">
               .
@@ -35,7 +35,7 @@ const Portfolio = () => {
                   width={700}
                   height={400}
                 />
-                <Heading as="h3" size="md" color="gray.100">
+                <Heading as="h3" size="sm">
                   {item.heading}
                 </Heading>
                 <Text fontSize="sm" color="gray.400" align="justify">

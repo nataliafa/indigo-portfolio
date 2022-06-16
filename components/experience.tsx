@@ -24,7 +24,7 @@ const Experience = () => {
   return (
     <Center bg="blue.800">
       <Container maxW="1400px" py={20} px={8}>
-        <Heading as="h2" mb={8} color="gray.100">
+        <Heading mb={8}>
           {data.heading}
           <Text as="span" color="cyan.500">
             .
