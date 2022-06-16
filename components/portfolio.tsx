@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import data from "./portfolio.json";
+import Dot from "./dot";
 
 const Portfolio = () => {
   return (
@@ -18,9 +19,7 @@ const Portfolio = () => {
         <Stack spacing={8}>
           <Heading>
             {data.heading}
-            <Text as="span" color="cyan.500">
-              .
-            </Text>
+            <Dot />
           </Heading>
           <Text color="gray.400" align="justify">
             {data.text}

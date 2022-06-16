@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import data from "./education.json";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import Dot from "./dot";
 
 const Education = () => {
   return (
@@ -18,9 +19,7 @@ const Education = () => {
       <Container maxW="1400px" py={20} px={8}>
         <Heading mb={8}>
           {data.heading}
-          <Text as="span" color="cyan.500">
-            .
-          </Text>
+          <Dot />
         </Heading>
         <Stack bg="blue.800" p={10} borderRadius={8} spacing={5}>
           {data.items.map((item, index) => {

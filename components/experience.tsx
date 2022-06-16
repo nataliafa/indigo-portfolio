@@ -18,6 +18,7 @@ import { HiMinusSm } from "react-icons/hi";
 import { GoLocation } from "react-icons/go";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import data from "./experience.json";
+import Dot from "./dot";
 
 const Experience = () => {
   const [blue600] = useToken("colors", ["blue.600"]);
@@ -26,9 +27,7 @@ const Experience = () => {
       <Container maxW="1400px" py={20} px={8}>
         <Heading mb={8}>
           {data.heading}
-          <Text as="span" color="cyan.500">
-            .
-          </Text>
+          <Dot />
         </Heading>
         <Grid templateColumns="1fr 2fr" gap={10} w="100%">
           <Stack spacing={3}>
