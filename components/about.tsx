@@ -10,7 +10,6 @@ import {
   Grid,
   Link,
   Img,
-  useToken,
 } from "@chakra-ui/react";
 import data from "./about.json";
 import Icon from "./icon";
