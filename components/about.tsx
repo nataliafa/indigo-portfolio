@@ -19,8 +19,14 @@ const About = () => (
     <Container pb={{ base: 8, md: 0 }}>
       <HStack spacing={4} mb={{ base: 6, lg: 0 }}>
         {data.socials.map((item, index) => (
-          <Link key={index} href={item.link} isExternal>
-            <Icon name={item.iconName} fontSize="32px" color="white" />
+          <Link
+            _hover={{ color: "gray.400" }}
+            key={index}
+            href={item.link}
+            isExternal
+            color="white"
+          >
+            <Icon name={item.iconName} fontSize="32px" />
           </Link>
         ))}
       </HStack>
