@@ -7,6 +7,7 @@ import * as RiIcons from "react-icons/ri";
 import * as VscIcons from "react-icons/vsc";
 import * as MdIcons from "react-icons/md";
 import * as FaIcons from "react-icons/fa";
+import * as GoIcons from "react-icons/go";
 import { BsQuestionCircle } from "react-icons/bs";
 
 type IconProps = {
@@ -43,6 +44,9 @@ const Icon = ({ name, fontSize, color }: IconProps) => {
   }
   if (name.startsWith("Fa")) {
     IconComponent = FaIcons[name];
+  }
+  if (name.startsWith("Go")) {
+    IconComponent = GoIcons[name];
   }
   if (!IconComponent) {
     return <BsQuestionCircle />;
