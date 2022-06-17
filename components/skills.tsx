@@ -27,7 +27,7 @@ const Skills = () => (
             <Stack
               key={index}
               spacing={4}
-              p={{ base: 4, md: 8 }}
+              p={{ base: 5, md: 8 }}
               bg="blue.800"
               borderRadius={8}
             >
