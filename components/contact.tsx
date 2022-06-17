@@ -12,11 +12,16 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 
 const Contact = () => (
   <Center bg="blue.500">
-    <Container maxW="1400px" pt={20} pb={48} px={8}>
-      <Grid templateColumns="1fr 1fr" gap={6}>
+    <Container
+      maxW="1400px"
+      pt={{ base: 8, lg: 20 }}
+      pb={{ base: 32, lg: 48 }}
+      px={{ base: 5, lg: 8 }}
+    >
+      <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6}>
         <Stack spacing={5}>
           <Text
-            fontSize="100px"
+            fontSize={{ base: "48px", lg: "100px" }}
             fontWeight="bold"
             lineHeight="1.2"
             color="white"
@@ -25,7 +30,10 @@ const Contact = () => (
             <br />
             Us Begin
           </Text>
-          <ArrowRightIcon fontSize="64px" color="blue.600" />
+          <ArrowRightIcon
+            fontSize={{ base: "32px", lg: "64px" }}
+            color="blue.600"
+          />
         </Stack>
         <form action="" method="POST">
           <Stack direction="column" spacing={6}>
@@ -54,7 +62,7 @@ const Contact = () => (
               bg="white"
               required
             />
-            <Button colorScheme="denim" type="submit" w="50%" color="white">
+            <Button colorScheme="denim" type="submit" color="white">
               Send
             </Button>
           </Stack>
