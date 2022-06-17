@@ -12,12 +12,7 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 
 const Contact = () => (
   <Center bg="blue.500">
-    <Container
-      maxW="1400px"
-      pt={{ base: 8, lg: 20 }}
-      pb={{ base: 32, lg: 48 }}
-      px={{ base: 5, lg: 8 }}
-    >
+    <Container pb={{ base: 32, lg: 48 }}>
       <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6}>
         <Stack spacing={5}>
           <Text

@@ -14,7 +14,7 @@ import Dot from "./dot";
 
 const Education = () => (
   <Center bg="blue.900">
-    <Container maxW="1400px" py={{ base: 8, lg: 20 }} px={{ base: 5, lg: 8 }}>
+    <Container>
       <Heading mb={8}>
         {data.heading}
         <Dot />

@@ -16,12 +16,7 @@ import Icon from "./icon";
 
 const About = () => (
   <Center bg="blue.800">
-    <Container
-      maxW="1400px"
-      pt={{ base: 8, lg: 20 }}
-      pb={{ base: 8, md: 0 }}
-      px={{ base: 5, lg: 8 }}
-    >
+    <Container pb={{ base: 8, md: 0 }}>
       <HStack spacing={4} mb={{ base: 6, lg: 0 }}>
         {data.socials.map((item, index) => (
           <Link key={index} href={item.link} isExternal>
