@@ -6,10 +6,10 @@ const Heading: ComponentStyleConfig = {
   },
   sizes: {
     sm: {
-      fontSize: ["18px", null, null, "20px"],
+      fontSize: ["20px", null, null, "22px"],
     },
     md: {
-      fontSize: ["24px", null, null, "36px"],
+      fontSize: ["26px", null, null, "36px"],
     },
     xl: {
       fontSize: ["40px", null, null, "70px"],
