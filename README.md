@@ -2,6 +2,10 @@
 
 Next.js Portfolio with responsive and mobile support 🫐
 
+## Interface
+
+![indigo_portfolio](images/indigo-portfolio.gif)
+
 ## Getting Started
 
 Install Node.js v16 (Gallium):
