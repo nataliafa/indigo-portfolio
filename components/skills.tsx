@@ -9,10 +9,10 @@ import {
   Text,
   Container,
   Flex,
-} from "@chakra-ui/react";
-import data from "./skills.json";
-import Icon from "./icon";
-import Dot from "./dot";
+} from "@chakra-ui/react"
+import data from "./skills.json"
+import Icon from "./icon"
+import Dot from "./dot"
 
 const Skills = () => (
   <Center bg="blue.900">
@@ -61,6 +61,6 @@ const Skills = () => (
       </Stack>
     </Container>
   </Center>
-);
+)
 
-export default Skills;
+export default Skills

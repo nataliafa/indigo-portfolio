@@ -1,4 +1,4 @@
-import type { ComponentStyleConfig } from "@chakra-ui/theme";
+import type { ComponentStyleConfig } from "@chakra-ui/theme"
 
 const Heading: ComponentStyleConfig = {
   baseStyle: {
@@ -18,6 +18,6 @@ const Heading: ComponentStyleConfig = {
   defaultProps: {
     size: "md",
   },
-};
+}
 
-export default Heading;
+export default Heading

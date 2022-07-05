@@ -1,4 +1,4 @@
-import type { ComponentStyleConfig } from "@chakra-ui/theme";
+import type { ComponentStyleConfig } from "@chakra-ui/theme"
 
 const Container: ComponentStyleConfig = {
   variants: {
@@ -13,6 +13,6 @@ const Container: ComponentStyleConfig = {
   defaultProps: {
     variant: "responsive",
   },
-};
+}
 
-export default Container;
+export default Container

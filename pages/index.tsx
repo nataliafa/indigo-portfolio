@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import About from "../components/about";
-import Education from "../components/education";
-import Portfolio from "../components/portfolio";
-import Skills from "../components/skills";
-import Experience from "../components/experience";
-import Contact from "../components/contact";
+import type { NextPage } from "next"
+import Head from "next/head"
+import Image from "next/image"
+import About from "../components/about"
+import Education from "../components/education"
+import Portfolio from "../components/portfolio"
+import Skills from "../components/skills"
+import Experience from "../components/experience"
+import Contact from "../components/contact"
 
 const Home: NextPage = () => (
   <>
@@ -24,6 +24,6 @@ const Home: NextPage = () => (
       <Contact />
     </main>
   </>
-);
+)
 
-export default Home;
+export default Home

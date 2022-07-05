@@ -10,9 +10,9 @@ import {
   Grid,
   Link,
   Img,
-} from "@chakra-ui/react";
-import data from "./about.json";
-import Icon from "./icon";
+} from "@chakra-ui/react"
+import data from "./about.json"
+import Icon from "./icon"
 
 const About = () => (
   <Center bg="blue.800">
@@ -83,6 +83,6 @@ const About = () => (
       </Grid>
     </Container>
   </Center>
-);
+)
 
-export default About;
+export default About

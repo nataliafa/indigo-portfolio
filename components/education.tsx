@@ -8,9 +8,9 @@ import {
   Link,
   Container,
   Box,
-} from "@chakra-ui/react";
-import data from "./education.json";
-import Dot from "./dot";
+} from "@chakra-ui/react"
+import data from "./education.json"
+import Dot from "./dot"
 
 const Education = () => (
   <Center bg="blue.900">
@@ -21,7 +21,7 @@ const Education = () => (
       </Heading>
       <Stack spacing={5} p={{ base: 5, md: 8 }} bg="blue.800" borderRadius={8}>
         {data.items.map((item, index) => {
-          const isLast = index !== data.items.length - 1;
+          const isLast = index !== data.items.length - 1
           return (
             <Box key={index}>
               <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6}>
@@ -50,11 +50,11 @@ const Education = () => (
                 />
               )}
             </Box>
-          );
+          )
         })}
       </Stack>
     </Container>
   </Center>
-);
+)
 
-export default Education;
+export default Education

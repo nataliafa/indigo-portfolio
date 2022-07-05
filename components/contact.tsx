@@ -7,8 +7,8 @@ import {
   Container,
   Input,
   Textarea,
-} from "@chakra-ui/react";
-import { ArrowRightIcon } from "@chakra-ui/icons";
+} from "@chakra-ui/react"
+import { ArrowRightIcon } from "@chakra-ui/icons"
 
 const Contact = () => (
   <Center bg="blue.500">
@@ -65,6 +65,6 @@ const Contact = () => (
       </Grid>
     </Container>
   </Center>
-);
+)
 
-export default Contact;
+export default Contact

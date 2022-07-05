@@ -11,10 +11,10 @@ import {
   Link,
   Divider,
   Circle,
-} from "@chakra-ui/react";
-import data from "./experience.json";
-import Dot from "./dot";
-import Icon from "./icon";
+} from "@chakra-ui/react"
+import data from "./experience.json"
+import Dot from "./dot"
+import Icon from "./icon"
 
 const Experience = () => (
   <Center bg="blue.800">
@@ -53,7 +53,7 @@ const Experience = () => (
         <Box pos="relative" pl={12}>
           <Box pos="absolute" left={2} top={0} h="100%" w="px" bg="gray.400" />
           {data.items.map((item, index) => {
-            const isLast = index !== data.items.length - 1;
+            const isLast = index !== data.items.length - 1
             return (
               <Stack
                 key={index}
@@ -94,12 +94,12 @@ const Experience = () => (
                   {item.text}
                 </Text>
               </Stack>
-            );
+            )
           })}
         </Box>
       </Grid>
     </Container>
   </Center>
-);
+)
 
-export default Experience;
+export default Experience

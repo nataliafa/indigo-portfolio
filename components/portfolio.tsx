@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 import {
   Center,
   Heading,
@@ -7,10 +7,10 @@ import {
   Text,
   Button,
   Container,
-} from "@chakra-ui/react";
-import data from "./portfolio.json";
-import Icon from "./icon";
-import Dot from "./dot";
+} from "@chakra-ui/react"
+import data from "./portfolio.json"
+import Icon from "./icon"
+import Dot from "./dot"
 
 const Portfolio = () => (
   <Center bg="blue.800">
@@ -59,6 +59,6 @@ const Portfolio = () => (
       </Stack>
     </Container>
   </Center>
-);
+)
 
-export default Portfolio;
+export default Portfolio
